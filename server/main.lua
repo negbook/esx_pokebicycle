@@ -8,7 +8,7 @@ ESX.RegisterUsableItem('pokebicycle', function(source)
 	--xPlayer.removeInventoryItem('pokebicycle', 1)
     using = not using
     if using then 
-        xPlayer.triggerEvent('esx_pokebicycle:spawnVehicleInto', "scorcher")
+        xPlayer.triggerEvent('esx_pokebicycle:spawnVehicleInto', Config.bicycle)
         TriggerClientEvent('esx_pokebicycle:onUse', source)
     else 
         xPlayer.triggerEvent('esx_pokebicycle:spawnedVehicleDelete')
